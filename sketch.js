@@ -23,10 +23,9 @@ function setup(){
 //create a canvas
 
 // createCanvas(window,window);
-// createCanvas(windowWidth,windowHeight);
+createCanvas(windowWidth,windowHeight);
 // createCanvas(width,height);
 // createCanvas(600,600);
-
 // Moving background
 
 path=createSprite(width/2,200);
@@ -62,9 +61,9 @@ function draw() {
   //   path.x = height/2;
   // }
 
-  // if(path.y > height ){
-  //   path.x = height/2;
-  // }
+   if(path.y > height ){
+     path.x = height/2;
+   }
 
   // if(path.x > height ){
   //   path.y = height;
